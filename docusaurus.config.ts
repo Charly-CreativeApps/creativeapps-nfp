@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Le programme du nouveau front populaire',
+  tagline: 'Version web du programme du nouveau Front Populaire',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -16,7 +16,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'nfp', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -25,8 +25,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'fr',
+    locales: ['fr'],
   },
 
   presets: [
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Charly-CreativeApps/creativeapps-nfp',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -58,21 +58,20 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Nouveau front populaire',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Logo nouveau front populaire',
+        src: 'img/logo_nfp.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Le programme',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/Charly-CreativeApps/creativeapps-nfp',
           label: 'GitHub',
           position: 'right',
         },
@@ -82,46 +81,62 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Le Programme',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'les 15 premiers jours',
+              to: '/docs/category/partie-1---15-premiers-jours',
+            },
+            {
+              label: 'les 100 premiers jours',
+              to: '/docs/category/partie-2---100-premiers-jours',
+            },
+            {
+              label: 'les mois suivants',
+              to: '/docs/category/partie-3---les-mois-suivants',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'La gauche unie',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'la France Insoumise',
+              href: 'https://lafranceinsoumise.fr/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'le Parti socialiste',
+              href: 'https://www.parti-socialiste.fr/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Europe Ecologie Les Verts',
+              href: 'https://lesecologistes.fr/',
             },
+            {
+              label: 'Place publique',
+              href: 'https://place-publique.eu/'
+            },
+            {
+              label: 'le Parti communiste français',
+              href: 'https://www.pcf.fr/'
+            }
           ],
         },
         {
-          title: 'More',
+          title: 'S\'informer',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'l\'Humanité',
+              href: 'https://www.humanite.fr/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Libération',
+              href: 'https://www.liberation.fr/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Texte du Nouveau front populiare - site fait avec Docusaurus par CreativeApps`,
     },
     prism: {
       theme: prismThemes.github,
